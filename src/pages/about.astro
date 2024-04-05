@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const PageTitle = "About";
 
 const identity = {
@@ -23,6 +25,7 @@ const textCase = "uppercase";
   <head>
     <title>{PageTitle}</title>
   </head>
+  <Navigation />
   <body>
     <style define:vars={{skillColor, fontWeight, textCase}}>
       h1 {
@@ -35,9 +38,6 @@ const textCase = "uppercase";
         text-transform: var(--textCase);
       }
     </style>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
     <body>
       <h1>My Astro Site</h1>
       <h1>About Me!</h1>
