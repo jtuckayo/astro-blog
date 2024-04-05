@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = "Home Page";
 ---
 
@@ -11,9 +12,7 @@ const pageTitle = "Home Page";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<a href="/">Home</a>
-	<a href="/about/">About</a>
-	<a href="/blog/">Blog</a>
+	<Navigation />
 	<body>
 		<h1>Black Palm Data & Digital</h1>
 	</body>

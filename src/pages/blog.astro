@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = "My Astro Learning Blog";
 ---
 
@@ -9,10 +10,8 @@ const pageTitle = "My Astro Learning Blog";
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
   </head>
+  <Navigation/>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
     <h1>{pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
     <ul>
